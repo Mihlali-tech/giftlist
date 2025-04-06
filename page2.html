@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Wishlist - Mihlali's Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Choose Your Gift!</h1>
+    </header>
+
+    <div class="funny-paragraph">
+        <p>Hey! So here is my Birthday Wishlist. I thought about giving it in written form to everyone, but then I thought: What if you all get me the same thing? I know I could return it, but then I was like, let me try it this way. Remember, if you have any issues with this site, you can always reach out to my team (which is only me lol), through: "Mihlali.Ncayo@icloud.com"</p>
+    </div>
+
+    <div class="wishlist-container">
+        <!-- Item 1: Harry Potter Book -->
+        <div class="wishlist-item">
+            <h3>Harry Potter Book</h3>
+            <p>(Preferably first in the series, unless you are getting me more than one)</p>
+            <button class="add-to-cart" data-item="Harry Potter Book">Add to Cart</button>
+        </div>
+
+        <!-- Item 2: Vlog Stuff -->
+        <div class="wishlist-item">
+            <h3>Vlog Stuff</h3>
+            <p>(Could be anything: microphone, light, tripod, USB to iPhone adapter)</p>
+            <button class="add-to-cart" data-item="Vlog Stuff">Add to Cart</button>
+        </div>
+
+        <!-- Item 3: Juce Perfume -->
+        <div class="wishlist-item">
+            <h3>Juce Perfume</h3>
+            <p>(Any fragrance of your choice, but from Juce)</p>
+            <button class="add-to-cart" data-item="Juce Perfume">Add to Cart</button>
+        </div>
+
+        <!-- Item 4: Cute Laptop Cover/Pouch -->
+        <div class="wishlist-item">
+            <h3>Cute Laptop Cover/Pouch</h3>
+            <p>(My laptop is an HP 250 G7)</p>
+            <button class="add-to-cart" data-item="Cute Laptop Cover/Pouch">Add to Cart</button>
+        </div>
+
+        <!-- Item 5: Headphones -->
+        <div class="wishlist-item">
+            <h3>Headphones</h3>
+            <p>(No specific brand, but not the uncomfortable ones, please!)</p>
+            <button class="add-to-cart" data-item="Headphones">Add to Cart</button>
+        </div>
+
+        <!-- Item 6: Small Gym Bag -->
+        <div class="wishlist-item">
+            <h3>Small Gym Bag</h3>
+            <p>(I have a big one, would like a smaller one)</p>
+            <button class="add-to-cart" data-item="Small Gym Bag">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <!-- Chat Section -->
+<div id="chat">
+    <h3>Chat with friends</h3>
+    <textarea id="message-input" placeholder="Say something..." rows="3"></textarea>
+    <button onclick="sendMessage()">Send Message</button>
+    
+    <div id="chat-messages">
+        <!-- Display messages here -->
+    </div>
+</div>
+
+
+    <script src="birthday.js"></script>
+</body>
+
+</html>

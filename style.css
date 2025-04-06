@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F0F0; /* light pinkish background */
+    color: #4F4A4A; /* Dark brown text */
+}
+
+/* Header */
+header {
+    background-color: #B89C6A; /* light brown background */
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    color: #e4d8dd; /* light pink text */
+    font-size: 3rem;
+}
+
+header p {
+    color: #6F4F4F; /* dark brown for the catchphrase */
+    font-size: 1.2rem;
+}
+
+.scroll-down-button {
+    background-color: #F2A3C5; /* light pink button */
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.scroll-down-button:hover {
+    background-color: #D97C91; /* darker pink when hovered */
+}
+
+/* Funny Paragraph */
+.funny-paragraph {
+    background-color: #FFE4D9; /* soft pink background */
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.funny-paragraph p {
+    font-size: 1rem;
+    color: #6F4F4F; /* Dark brown text */
+    line-height: 1.6;
+}
+
+/* Wishlist Container */
+.wishlist-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Item Cards */
+.wishlist-item {
+    background-color: #FFF1F0; /* light pink for item background */
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.wishlist-item:hover {
+    transform: translateY(-10px);
+}
+
+.wishlist-item h3 {
+    color: #B89C6A; /* light brown title */
+    font-size: 1.5rem;
+}
+
+.add-to-cart {
+    background-color: #B89C6A; /* light brown button */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.add-to-cart:hover {
+    background-color: #8A6B3D; /* darker brown when hovered */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #FFF1F0; /* light pink for modal background */
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.modal button {
+    background-color: #F2A3C5; /* pink button */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.modal button:hover {
+    background-color: #D97C91; /* darker pink when hovered */
+}
+
+/* User Choices Section (cart.html) */
+#user-choices {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #FFE4D9; /* Soft pink background */
+    border-radius: 10px;
+    text-align: center;
+}
+
+#user-choices div {
+    background-color: #FFF1F0; /* light pink background for each choice */
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#user-choices p {
+    font-size: 1.2rem;
+    color: #6F4F4F; /* Dark brown text */
+}
+
+/* Ensure grid items are responsive */
+@media (max-width: 768px) {
+    .wishlist-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .wishlist-container {
+        grid-template-columns: 1fr; /* 1 item per row for very small screens */
+    }
+}
